@@ -17,9 +17,12 @@ public class WhenWorkingWithSets {
     // We can create a set and add values to the set
     @Test
     public void creatingANewSet() {
-        Set<String> colors = null;
+        Set<String> colors = new HashSet<>();
 
         // TODO: Create a new HashSet and add the values "red", "green", and "blue"
+        colors.add("red");
+        colors.add("green");
+        colors.add("blue");
 
         assertThat(colors).containsExactlyInAnyOrder("red", "green", "blue");
     }
